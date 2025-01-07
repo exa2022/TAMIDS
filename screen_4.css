@@ -1,0 +1,38 @@
+#body {
+    background-image: url("information.gif");
+    background-size: cover;
+}
+
+#list {
+    color: white;
+    margin-left: 380px;
+    font-size: 20px;
+}
+
+#members {
+    color: white;
+    margin-left: 400px;
+    margin-top:300px;
+    font-size: 20px;
+}
+
+#sources {
+    color: white;
+    margin-left: 400px;
+    font-size: 20px;
+}
+
+.backicon-container {
+    width: 5px;
+    height: 5px;
+    cursor: pointer;
+}
+
+.top-left-icon {
+    width: 50px;
+    height: 30px;
+    top: 10px;
+    margin-left: 10px;
+    opacity: 0.4;
+}
+

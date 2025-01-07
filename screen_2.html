@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Filter Dropdown</title>
+    <link rel="stylesheet" href="screen_2.css">
+    <link rel="icon" type="image/x-icon" 
+        href="https://static.abeka.com/Shared/ABeka/ProductImages/ClipArt/220493/150x150y160fx160fh-w/220493-Agriculture-Symbol-yellow-wheat-color-png.png
+        ">
+</head>
+
+<body id="body">
+    <!-- Dropdown Button -->
+    <!--<div class="dropdown">
+    <!-- <button class="dropdown-btn" onclick="toggleDropdown()">Search</button> -->
+
+    <!-- Dropdown Menu with Search Input -->
+    <!-- <div class="dropdown-menu">
+        <input type="text" id="searchInput" class="search-box" onkeyup="filterFunction()" placeholder="Search for options...">
+        <button id="map" onclick = "window.location.href='screen_3.html'">Interactive Map</button>
+        <ul id="dropdownList" class="dropdown-list">
+            <li><a href="https://www.google.com/maps?q=32.8067,-86.7911&z=5" target="_blank">Alabama</a></li>
+            <li><a href="https://www.google.com/maps?q=61.5954,-150.7244&z=5" target="_blank">Alaska</a></li>
+            <li><a href="https://www.google.com/maps?q=33.7469,-111.4312&z=5" target="_blank">Arizona</a></li>
+            <li><a href="https://www.google.com/maps?q=34.7465,-92.2896&z=5" target="_blank">Arkansas</a></li>
+            <li><a href="https://www.google.com/maps?q=36.7783,-119.4179&z=5" target="_blank">California</a></li>
+            <li><a href="https://www.google.com/maps?q=39.5501,-105.7821&z=5" target="_blank">Colorado</a></li>
+            <li><a href="https://www.google.com/maps?q=41.6032,-73.0877&z=5" target="_blank">Connecticut</a></li>
+            <li><a href="https://www.google.com/maps?q=39.3185,-75.5071&z=5" target="_blank">Delaware</a></li>
+            <li><a href="https://www.google.com/maps?q=27.9944,-81.7603&z=5" target="_blank">Florida</a></li>
+            <li><a href="https://www.google.com/maps?q=33.6407,-83.4412&z=5" target="_blank">Georgia</a></li>
+            <li><a href="https://www.google.com/maps?q=21.3069,-157.8583&z=5" target="_blank">Hawaii</a></li>
+            <li><a href="https://www.google.com/maps?q=44.0682,-114.7420&z=5" target="_blank">Idaho</a></li>
+            <li><a href="https://www.google.com/maps?q=40.6331,-89.3985&z=5" target="_blank">Illinois</a></li>
+            <li><a href="https://www.google.com/maps?q=39.7684,-86.1580&z=5" target="_blank">Indiana</a></li>
+            <li><a href="https://www.google.com/maps?q=41.8780,-93.0977&z=5" target="_blank">Iowa</a></li>
+            <li><a href="https://www.google.com/maps?q=39.0119,-98.4842&z=5" target="_blank">Kansas</a></li>
+            <li><a href="https://www.google.com/maps?q=37.8393,-84.2700&z=5" target="_blank">Kentucky</a></li>
+            <li><a href="https://www.google.com/maps?q=30.6954,-91.1390&z=5" target="_blank">Louisiana</a></li>
+            <li><a href="https://www.google.com/maps?q=44.2998,-69.4443&z=5" target="_blank">Maine</a></li>
+            <li><a href="https://www.google.com/maps?q=39.0458,-76.6413&z=5" target="_blank">Maryland</a></li>
+            <li><a href="https://www.google.com/maps?q=42.3601,-71.0589&z=5" target="_blank">Massachusetts</a></li>
+            <li><a href="https://www.google.com/maps?q=44.3148,-85.6024&z=5" target="_blank">Michigan</a></li>
+            <li><a href="https://www.google.com/maps?q=46.7296,-94.6859&z=5" target="_blank">Minnesota</a></li>
+            <li><a href="https://www.google.com/maps?q=32.7416,-89.6787&z=5" target="_blank">Mississippi</a></li>
+            <li><a href="https://www.google.com/maps?q=38.5737,-92.6038&z=5" target="_blank">Missouri</a></li>
+            <li><a href="https://www.google.com/maps?q=46.8797,-110.3626&z=5" target="_blank">Montana</a></li>
+            <li><a href="https://www.google.com/maps?q=41.1254,-98.2688&z=5" target="_blank">Nebraska</a></li>
+            <li><a href="https://www.google.com/maps?q=38.8026,-116.4194&z=5" target="_blank">Nevada</a></li>
+            <li><a href="https://www.google.com/maps?q=43.7930,-71.4625&z=5" target="_blank">New Hampshire</a></li>
+            <li><a href="https://www.google.com/maps?q=40.0583,-74.4057&z=5" target="_blank">New Jersey</a></li>
+            <li><a href="https://www.google.com/maps?q=34.5199,-105.8701&z=5" target="_blank">New Mexico</a></li>
+            <li><a href="https://www.google.com/maps?q=40.7128,-74.0060&z=5" target="_blank">New York</a></li>
+            <li><a href="https://www.google.com/maps?q=35.7820,-79.8090&z=5" target="_blank">North Carolina</a></li>
+            <li><a href="https://www.google.com/maps?q=47.5515,-101.0020&z=5" target="_blank">North Dakota</a></li>
+            <li><a href="https://www.google.com/maps?q=40.4173,-82.9071&z=5" target="_blank">Ohio</a></li>
+            <li><a href="https://www.google.com/maps?q=35.4676,-97.5164&z=5" target="_blank">Oklahoma</a></li>
+            <li><a href="https://www.google.com/maps?q=44.9339,-123.0707&z=5" target="_blank">Oregon</a></li>
+            <li><a href="https://www.google.com/maps?q=40.2737,-76.8844&z=5" target="_blank">Pennsylvania</a></li>
+            <li><a href="https://www.google.com/maps?q=41.6809,-71.5118&z=5" target="_blank">Rhode Island</a></li>
+            <li><a href="https://www.google.com/maps?q=33.9581,-80.9450&z=5" target="_blank">South Carolina</a></li>
+            <li><a href="https://www.google.com/maps?q=44.2998,-99.4388&z=5" target="_blank">South Dakota</a></li>
+            
+        </ul>
+    </div> -->
+
+    <input list="countries" id="countriesInput" name="country" placeholder="Select a Country" onchange="redirectToCountry()">
+    <datalist id="countries">
+        <option value="India">
+        <option value="United States" >
+        <option value="China">
+        <option value="Argentina">
+        <option value="Brazil">
+        <option value="Pakistan">
+        <option value="Mali">
+        <option value="Rest of the World">
+        <option value="Australia">
+        <option value="Turkey">
+        <option value="Uzbekistan">
+    </datalist>
+    
+
+    <input list = "commodities" id = "commoditiesInput" name="commodities" placeholder="Select a Commodity" onchange="redirectToCommodity()">
+    <datalist id = "commodities">
+        <option value="Cotton">
+        <option value="Corn">
+        <option value="Soybean">
+        <option value="Wheat">
+    </datalist>
+
+    <button id = "submit" onclick="executeButton()">Submit</button>
+    
+    <script>
+        // JavaScript function to handle the redirect when a state is selected
+        function redirectToCountry() {
+            // Get the input element and its selected value
+            const countryInput = document.getElementById('countriesInput');
+
+            const selectedCountry = countryInput.value;
+            
+            // Get the option elements in the datalist
+            const options = document.querySelectorAll('#countries option');
+            
+            // Loop through options to find the one that matches the selected state
+            // options.forEach(option => {
+            //     if (option.value === selectedCountry) {
+            //         // Redirect to the URL associated with the selected state
+            //         window.location.href = option.getAttribute('data-url');
+            //     }
+            // });
+        }
+
+        
+        function redirectToCommodity() {
+            // Get the input element and its selected value
+            const commmodityInput = document.getElementById('commodityInput');
+            const selectedCommodity = commodityInput.value;
+
+            // Get the option elements in the datalist
+            const options = document.querySelectorAll('#commodities option');
+
+            // Loop through options to find the one that matches the selected state
+            // options.forEach(option => {
+            //     if (option.value === selectedCommodity) {
+            //         // Redirect to the URL associated with the selected state
+            //         window.location.href = option.getAttribute('data-url');
+            //     }
+            // });
+        }
+
+        // function checkSelections() 
+        // {
+        //     if (selectedCommodity !== "" && selectedCountry !== "") {
+        //         // Enable the button if both dropdowns have a value
+        //         submit.disabled = false;
+        //         return true;
+        //     } else {
+        //         // Disable the button if either dropdown doesn't have a value
+        //         submit.disabled = true;
+        //         return false;
+        //     }
+        // }
+
+
+        function executeButton() 
+        {
+            const selectedCountry = document.getElementById('countriesInput').value;
+            const selectedCommodity = document.getElementById('commoditiesInput').value;
+
+            if(selectedCountry !== "" && selectedCommodity !== "") 
+            {
+                // console.log('Redirecting to screen_3.html');
+                if(selectedCountry == "China" && selectedCommodity == "Cotton")
+                {
+                    window.location.replace("China.html"); 
+                }
+                if(selectedCountry == "Pakistan" && selectedCommodity == "Cotton")
+                {
+                    window.location.replace("Pakistan.html"); 
+                }
+                if(selectedCountry == "Rest of the World" && selectedCommodity == "Cotton")
+                {
+                    window.location.replace("Rest.html"); 
+                }
+            } 
+            else
+            {
+                alert("Please select both a country and a commodity.");
+            }
+        }
+
+    </script>
+    <script src="home.js"></script>
+</body>
+
+</html>
